@@ -3,17 +3,23 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <title>MJWeb Portfolio</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body>
+<head>
+    <title>MJWeb Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+</head>
 
-        {% include header.html %}
+<body>
+    {% include header.html %}
 
-        <script src="assets/js/jquery-2.1.4.min.js"></script>
-        <script src="assets/js/functions.js" type="text/javascript"></script>
-    </body>
+    {% include aboutme.html %}
+
+    {% include footer.html %}
+
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/functions.js" type="text/javascript"></script>
+</body>
+
 </html>

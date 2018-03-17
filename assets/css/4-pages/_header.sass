@@ -1,0 +1,83 @@
+header
+    background-color: #ccc
+    height: 550px
+    position: relative
+    overflow: hidden
+    color: $textColor
+
+    video
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        min-width: 100%
+        min-height: 100%
+        width: auto
+        height: auto
+        z-index: 1
+        background: transparent
+
+    .headerContent
+        position: relative
+        z-index: 2
+        background: linear-gradient( 45deg, rgba( $mainColor, .5 ), rgba( $accentColor, .5))
+        height: 100%
+        width: 100%
+
+        .logo
+            display: inline-block
+            margin: 20px 0 0 20px
+            font:
+                family: "Fira Sans", sans-serif
+                size: 40px
+                weight: 100
+
+            .mjText
+                font-weight: 900
+
+            .wText
+                letter-spacing: -8px
+
+            .eText
+                font-style: italic
+                letter-spacing: -2px
+
+        nav
+            float: right
+            margin: 30px 30px 0 0
+            text-transform: uppercase
+
+            a
+                margin-left: 10px
+                text-decoration: none
+                display: inline-block
+                color: $textColor
+
+                &:hover
+                    color: $hTextColor
+                    text-decoration: underline
+
+        h1
+            text-align: center
+            margin: 0 0 0 20px
+            padding-top: 150px
+            text-transform: uppercase
+            color: $textColor
+
+        p
+            text-align: center
+
+        #arrow
+            text-align: center
+            padding: 165px
+            -webkit-animation-duration: 3s
+            -webkit-animation-delay: 1s
+            -webkit-animation-iteration-count: infinite
+
+            .rectangle
+                display: inline-block
+                width: 0
+                height: 0
+                border-left: 20px solid transparent
+                border-right: 20px solid transparent
+                border-top: 20px solid $textColor
